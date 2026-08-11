@@ -469,7 +469,8 @@ body {
   position: relative;
   min-height: calc(100vh - var(--header-h));
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding-block: 64px;
 }
 

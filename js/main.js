@@ -30,4 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });

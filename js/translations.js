@@ -24,6 +24,46 @@ window.translations = {
     "facts.users": "Usuarios atendidos",
     "facts.endpoints": "Endpoints REST diseñados",
 
+    "experience.tag": "Trayectoria",
+    "experience.title": "De junior a líder de equipo, en tres años",
+    "experience.desc":
+      "Toda mi experiencia profesional hasta ahora, en la Unidad de Informática de la Facultad de Ciencias Económicas (UNAL).",
+    "experience.r1.when": "Abr 2025 – Jul 2026",
+    "experience.r1.role": "Líder de Desarrollo",
+    "experience.r1.b1":
+      "Equipo de 4 desarrolladores (3 junior, 1 semi-senior) sobre 6 aplicativos institucionales.",
+    "experience.r1.b2":
+      "5 aplicativos puestos en producción sobre Linux Red Hat, con Docker y Apache.",
+    "experience.r1.b3":
+      "Pipeline ETL en Python: ~7.000 registros históricos consolidados desde 3 fuentes.",
+    "experience.r1.b4":
+      "Levantamiento de requerimientos con 4 dependencias de la Facultad.",
+    "experience.apps.label": "Aplicativos que lideré:",
+    "experience.app1": "Aplicativo interno",
+    "experience.app2": "Cursos libres",
+    "experience.app3": "Insignias académicas",
+    "experience.app4": "Programación de salones",
+    "experience.app5": "Cartas de prácticas",
+    "experience.r2.when": "Feb 2024 – Mar 2025",
+    "experience.r2.role": "Desarrollador — BI, ETL y Full-Stack",
+    "experience.r2.b1":
+      "2 aplicativos nuevos de punta a punta con Django y React.js.",
+    "experience.r2.b2":
+      "~60 endpoints REST, combinando el ORM de Django y SQL directo.",
+    "experience.r2.b3":
+      "5 tableros de gestión en Power BI para el informe de la Unidad.",
+    "experience.r2.b4":
+      "Capacitó a 20 personas de otras áreas en Python, SQL y Google Apps Script (6 sesiones).",
+    "experience.r3.when": "Ago – Dic 2023",
+    "experience.r3.role": "Desarrollador Junior",
+    "experience.r3.b1":
+      "Frontend con React.js en equipo Scrum, integración de APIs REST.",
+    "experience.r4.when": "2020 – 2026",
+    "experience.r4.role": "Ingeniería de Sistemas y Computación",
+    "experience.r4.b1": "Egresado; acta de grado en trámite.",
+    "experience.r4.b2":
+      "Diplomado en Machine Learning y Data Science (192 horas), 2025.",
+
     "projects.tag": "Proyectos",
     "projects.title": "Trabajo reciente",
     "projects.desc":
@@ -85,6 +125,46 @@ window.translations = {
     "facts.apps": "Institutional applications",
     "facts.users": "Users served",
     "facts.endpoints": "REST endpoints designed",
+
+    "experience.tag": "Experience",
+    "experience.title": "From junior to team lead, in three years",
+    "experience.desc":
+      "All of my professional experience so far, at the Economics Faculty's IT Unit (UNAL).",
+    "experience.r1.when": "Apr 2025 – Jul 2026",
+    "experience.r1.role": "Development Lead",
+    "experience.r1.b1":
+      "Team of 4 developers (3 junior, 1 semi-senior) across 6 institutional applications.",
+    "experience.r1.b2":
+      "5 applications shipped to production on Linux Red Hat, with Docker and Apache.",
+    "experience.r1.b3":
+      "Python ETL pipeline: ~7,000 historical records consolidated from 3 sources.",
+    "experience.r1.b4":
+      "Requirements gathering with 4 departments across the Faculty.",
+    "experience.apps.label": "Applications I led:",
+    "experience.app1": "Internal app",
+    "experience.app2": "Open courses",
+    "experience.app3": "Academic badges",
+    "experience.app4": "Classroom scheduling",
+    "experience.app5": "Internship letters",
+    "experience.r2.when": "Feb 2024 – Mar 2025",
+    "experience.r2.role": "Developer — BI, ETL & Full-Stack",
+    "experience.r2.b1":
+      "2 new end-to-end applications with Django and React.js.",
+    "experience.r2.b2":
+      "~60 REST endpoints, combining the Django ORM with direct SQL.",
+    "experience.r2.b3":
+      "5 Power BI management dashboards for the Unit's reporting.",
+    "experience.r2.b4":
+      "Trained 20 people from other areas in Python, SQL and Google Apps Script (6 sessions).",
+    "experience.r3.when": "Aug – Dec 2023",
+    "experience.r3.role": "Junior Developer",
+    "experience.r3.b1":
+      "React.js frontend on a Scrum team, REST API integration.",
+    "experience.r4.when": "2020 – 2026",
+    "experience.r4.role": "Systems and Computer Engineering",
+    "experience.r4.b1": "Graduated coursework; degree certificate in process.",
+    "experience.r4.b2":
+      "Diploma in Machine Learning and Data Science (192 hours), 2025.",
 
     "projects.tag": "Projects",
     "projects.title": "Recent work",

@@ -729,6 +729,94 @@ body {
 }
 
 /* ==========================================================================
+   Trayectoria (experience timeline)
+   ========================================================================== */
+.timeline__item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 12px 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+}
+
+.timeline__item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeline__when {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.timeline__org {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+.timeline__role {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.timeline__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.timeline__list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-2);
+}
+
+.timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline__tags-label {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-right: 4px;
+}
+
+.timeline__tags .badge {
+  padding: 5px 12px;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 700px) {
+  .timeline__item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+/* ==========================================================================
    Projects
    ========================================================================== */
 .projects__grid {

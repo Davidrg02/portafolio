@@ -138,7 +138,10 @@ window.translations = {
     "skills.tag": "Habilidades",
     "skills.title": "Con lo que trabajo",
     "skills.desc": "Tecnologías y herramientas que uso con más frecuencia.",
-    "skills.tools": "Herramientas",
+    "skills.data": "Datos y análisis",
+    "skills.db": "SQL y bases de datos",
+    "skills.bi": "BI y reportería",
+    "skills.infra": "Infraestructura",
 
     "contact.tag": "Contacto",
     "contact.title": "¿Hablamos?",
@@ -294,7 +297,10 @@ window.translations = {
     "skills.tag": "Skills",
     "skills.title": "What I work with",
     "skills.desc": "Technologies and tools I use most often.",
-    "skills.tools": "Tools",
+    "skills.data": "Data & analysis",
+    "skills.db": "SQL & databases",
+    "skills.bi": "BI & reporting",
+    "skills.infra": "Infrastructure",
 
     "contact.tag": "Contact",
     "contact.title": "Let's talk",

@@ -76,7 +76,10 @@ ETL, Docker, Linux, despliegue y levantamiento de requerimientos con usuarios.
   administrativa. Su primer proyecto; solo frontend en React.js.
 
 **Formación**
-- Diplomado en Machine Learning y Data Science, UNAL, 2025 — 192 horas
+- Diplomado en Machine Learning and Data Science, UNAL, 18 mar – 26 jul 2025 — 192 horas
+  (Facultad de Ingeniería, Depto. de Ingeniería de Sistemas e Industrial). Certificado verificado.
+- Curso Elementos de Machine Learning, UNAL, 05 nov – 12 dic 2025 — 30 horas
+  (Facultad de Ingeniería, Instituto de Extensión e Investigación - IEI). Certificado verificado.
 - Inglés B2 (EF SET 59/100). **No conversacional aún.**
 
 ---

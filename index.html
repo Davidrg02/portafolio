@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>David · Desarrollador Full Stack</title>
-  <meta name="description" content="Portafolio de David, desarrollador full stack. Proyectos, habilidades y contacto." />
+  <title data-i18n="meta.title">David Rodríguez · Datos, BI y desarrollo</title>
+  <meta name="description" content="Analista de datos y desarrollador full-stack. Ingeniero de Sistemas, Universidad Nacional de Colombia. ETL, SQL, Power BI, Python y despliegue en producción." />
   <meta name="theme-color" content="#0a0e17" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="David · Desarrollador Full Stack" />
-  <meta property="og:description" content="Portafolio de David, desarrollador full stack. Proyectos, habilidades y contacto." />
+  <meta property="og:title" content="David Rodríguez · Datos, BI y desarrollo" />
+  <meta property="og:description" content="Analista de datos y desarrollador full-stack. Ingeniero de Sistemas, Universidad Nacional de Colombia. ETL, SQL, Power BI, Python y despliegue en producción." />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3c5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
 
@@ -20,13 +20,638 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
+  <a href="#main-content" class="skip-link" data-i18n="skip.content">Saltar al contenido</a>
 
-  <header id="header"></header>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-  <main id="main-content"></main>
+  <header id="header" class="header">
+    <div class="container header__inner">
+      <a href="#main-content" class="logo">David<span class="logo-dot">.</span></a>
 
-  <footer id="footer"></footer>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="#experience" class="nav__link" data-i18n="nav.experience">Trayectoria</a></li>
+          <li><a href="#cases" class="nav__link" data-i18n="nav.cases">Casos</a></li>
+          <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Habilidades</a></li>
+          <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma" data-i18n-aria-label="lang.switchLabel">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú" data-i18n-aria-label="nav.toggleLabel">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="about" class="hero section">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Bogotá, Colombia · Ingeniería de Sistemas y Computación, UNAL</p>
+          <h1 class="hero__name">David Rodríguez</h1>
+          <h2 class="hero__role" data-i18n="hero.role">Analizo los datos y construyo los sistemas que los producen.</h2>
+          <p class="hero__bio" data-i18n="hero.bio">
+            Entré como desarrollador junior a la Unidad de Informática de la
+            Facultad de Ciencias Económicas (UNAL) y salí tres años después
+            liderando el equipo. En el camino: seis aplicativos
+            institucionales, cinco puestos en producción, cerca de sesenta
+            endpoints REST, cinco tableros de gestión en Power BI y un
+            sistema de pronóstico de demanda que propuse por iniciativa
+            propia.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#cases" class="btn btn-primary" data-i18n="hero.ctaCases">Ver casos de estudio</a>
+            <a href="CV_David_Rodriguez.pdf" class="btn btn-outline" data-i18n="hero.ctaCv">Descargar CV</a>
+          </div>
+
+          <ul class="hero__social">
+            <li>
+              <a href="https://github.com/Davidrg02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:davidstevenrg2003@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/david-rodriguez-data/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__blob"></div>
+          <div class="hero__avatar">D</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="facts">
+          <div class="fact reveal">
+            <b class="fact__num" data-count="4">0</b>
+            <span class="fact__label" data-i18n="facts.devs">Desarrolladores a cargo</span>
+          </div>
+          <div class="fact reveal">
+            <b class="fact__num" data-count="6">0</b>
+            <span class="fact__label" data-i18n="facts.apps">Aplicativos institucionales</span>
+          </div>
+          <div class="fact reveal">
+            <b class="fact__num" data-count="1000" data-prefix="~">0</b>
+            <span class="fact__label" data-i18n="facts.users">Usuarios atendidos</span>
+          </div>
+          <div class="fact reveal">
+            <b class="fact__num" data-count="60" data-prefix="~">0</b>
+            <span class="fact__label" data-i18n="facts.endpoints">Endpoints REST diseñados</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#experience" class="scroll-cue" aria-label="Desplazarse hacia abajo" data-i18n-aria-label="hero.scrollLabel">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="experience.tag">Trayectoria</span>
+          <h2 class="section-title" data-i18n="experience.title">De junior a líder de equipo, en tres años</h2>
+          <p class="section-desc" data-i18n="experience.desc">
+            Toda mi experiencia profesional hasta ahora, en la Unidad de
+            Informática de la Facultad de Ciencias Económicas (UNAL).
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__when" data-i18n="experience.r1.when">Abr 2025 – Jul 2026</span>
+              <span class="timeline__org">UIFCE · FCE · UNAL</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="experience.r1.role">Líder de Desarrollo</h3>
+              <ul class="timeline__list">
+                <li data-i18n="experience.r1.b1">Equipo de 4 desarrolladores (3 junior, 1 semi-senior) sobre 6 aplicativos institucionales.</li>
+                <li data-i18n="experience.r1.b2">5 aplicativos puestos en producción sobre Linux Red Hat, con Docker y Apache.</li>
+                <li data-i18n="experience.r1.b3">Pipeline ETL en Python: ~7.000 registros históricos consolidados desde 3 fuentes.</li>
+                <li data-i18n="experience.r1.b4">Levantamiento de requerimientos con 4 dependencias de la Facultad.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="timeline__tags-label" data-i18n="experience.apps.label">Aplicativos que lideré:</span>
+                <span class="badge" data-i18n="experience.app1">Aplicativo interno</span>
+                <span class="badge" data-i18n="experience.app2">Cursos libres</span>
+                <span class="badge" data-i18n="experience.app3">Insignias académicas</span>
+                <span class="badge" data-i18n="experience.app4">Programación de salones</span>
+                <span class="badge" data-i18n="experience.app5">Cartas de prácticas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__when" data-i18n="experience.r2.when">Feb 2024 – Mar 2025</span>
+              <span class="timeline__org">UIFCE · FCE · UNAL</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="experience.r2.role">Desarrollador — BI, ETL y Full-Stack</h3>
+              <ul class="timeline__list">
+                <li data-i18n="experience.r2.b1">2 aplicativos nuevos de punta a punta con Django y React.js.</li>
+                <li data-i18n="experience.r2.b2">~60 endpoints REST, combinando el ORM de Django y SQL directo.</li>
+                <li data-i18n="experience.r2.b3">5 tableros de gestión en Power BI para el informe de la Unidad.</li>
+                <li data-i18n="experience.r2.b4">Capacitó a 20 personas de otras áreas en Python, SQL y Google Apps Script (6 sesiones).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__when" data-i18n="experience.r3.when">Ago – Dic 2023</span>
+              <span class="timeline__org">UIFCE · FCE · UNAL</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="experience.r3.role">Desarrollador Junior</h3>
+              <ul class="timeline__list">
+                <li data-i18n="experience.r3.b1">Frontend con React.js en equipo Scrum, integración de APIs REST.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__when" data-i18n="experience.r4.when">2020 – 2026</span>
+              <span class="timeline__org">Universidad Nacional de Colombia</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="experience.r4.role">Ingeniería de Sistemas y Computación</h3>
+              <ul class="timeline__list">
+                <li data-i18n="experience.r4.b1">Egresado; acta de grado en trámite.</li>
+                <li data-i18n="experience.r4.b2">Diplomado en Machine Learning y Data Science (192 horas), 2025.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="cases.tag">Casos de estudio</span>
+          <h2 class="section-title" data-i18n="cases.title">Casos a fondo</h2>
+          <p class="section-desc" data-i18n="cases.desc">
+            Cuatro proyectos: el problema, las restricciones y lo que
+            realmente hice — no solo el resultado.
+          </p>
+        </div>
+
+        <div class="cases__list">
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c1.title">Sistema de pronóstico de demanda académica</h3>
+                <p class="case-study__role" data-i18n="cases.c1.role">Iniciativa propia · Diseño y desarrollo completo</p>
+              </div>
+              <span class="case-study__when" data-i18n="cases.c1.when">Feb – Jul 2026</span>
+            </div>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c1.problem">
+                  La apertura de cupos de asignaturas y de cursos de
+                  educación continua se planeaba por criterio manual, sin
+                  estimación de demanda: la Facultad abría grupos que
+                  quedaban vacíos y dejaba corta la oferta de los que se
+                  llenaban.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c1.did">
+                  Propuse, diseñé y desarrollé el proyecto completo en seis
+                  meses. Construí un panel longitudinal de 154 asignaturas
+                  por semestre (2024-1 a 2026-1) con 13 variables derivadas
+                  — rezagos de inscripción, ocupación, repitencia,
+                  cancelación y atributos del plan de estudios — y entrené
+                  tres modelos de regresión con XGBoost, validados con
+                  partición temporal: los semestres más recientes quedan
+                  fuera del entrenamiento, porque con variables rezagadas
+                  una partición aleatoria dejaría ver el futuro al modelo.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Python</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">Scikit-learn</li>
+                    <li class="badge">XGBoost</li>
+                    <li class="badge">SQL</li>
+                    <li class="badge">MySQL</li>
+                    <li class="badge">SQLAlchemy</li>
+                    <li class="badge">FastAPI</li>
+                    <li class="badge">Streamlit</li>
+                    <li class="badge">pytest</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.result">Resultado</dt>
+                <dd data-i18n="cases.c1.result">
+                  Documentado y transferido al área para su despliegue. El
+                  entregable más valioso no fue el modelo: fue el
+                  diagnóstico de por qué el problema, tal como está
+                  planteado, no se puede resolver con los datos que existen
+                  hoy.
+                </dd>
+              </div>
+            </dl>
+
+            <div class="finding">
+              <p class="finding__eyebrow" data-i18n="finding.eyebrow">El hallazgo</p>
+              <h4 class="finding__headline" data-i18n="finding.headline">El modelo no le ganó a repetir el semestre anterior.</h4>
+
+              <div class="finding__bars">
+                <div class="finding__bar-row">
+                  <span class="finding__bar-label" data-i18n="finding.bar1">Persistencia (rezago 1)</span>
+                  <div class="finding__bar-track"><div class="finding__bar-fill" data-width="90"></div></div>
+                  <span class="finding__bar-value" data-i18n="finding.val1">15,77</span>
+                </div>
+                <div class="finding__bar-row">
+                  <span class="finding__bar-label" data-i18n="finding.bar2">Asumir grupo lleno</span>
+                  <div class="finding__bar-track"><div class="finding__bar-fill" data-width="97"></div></div>
+                  <span class="finding__bar-value" data-i18n="finding.val2">16,99</span>
+                </div>
+                <div class="finding__bar-row">
+                  <span class="finding__bar-label" data-i18n="finding.bar3">XGBoost entrenado</span>
+                  <div class="finding__bar-track"><div class="finding__bar-fill finding__bar-fill--model" data-width="100"></div></div>
+                  <span class="finding__bar-value" data-i18n="finding.val3">17,47</span>
+                </div>
+              </div>
+              <p class="finding__caption" data-i18n="finding.caption">Error absoluto medio sobre el conjunto de prueba — menor es mejor · resultados reales del proyecto</p>
+
+              <p data-i18n="finding.p1">
+                El modelo alcanzó un R² de 0,845, que en un reporte apurado
+                se lee como éxito. Comparado contra dos reglas triviales sin
+                aprendizaje, quedó por debajo de ambas: un R² alto con
+                error peor que la persistencia significa que el modelo
+                aprendió el nivel típico de cada asignatura, no el cambio
+                de un semestre a otro.
+              </p>
+              <p data-i18n="finding.p2">
+                La causa es de medición, no de ajuste: el objetivo está
+                estructuralmente censurado. Lo que registra el sistema no
+                es demanda, es demanda truncada por el cupo — ninguna
+                cantidad de historia adicional arregla eso.
+              </p>
+              <p data-i18n="finding.p3">
+                Reporté el resultado tal cual y documenté qué se necesita
+                para resolverlo: registrar sistemáticamente el sobrecupo y
+                la demanda expresada, las únicas señales no censuradas
+                disponibles.
+              </p>
+            </div>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c2.title">Consolidación de datos históricos dispersos</h3>
+                <p class="case-study__role" data-i18n="cases.c2.role">Líder de Desarrollo · Diseño e implementación</p>
+              </div>
+              <span class="case-study__when" data-i18n="cases.c2.when">2025 – 2026</span>
+            </div>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c2.problem">
+                  Años de información operativa vivían en archivos de Excel
+                  mantenidos por distintas personas, con nombres, formatos
+                  de fecha y categorías incompatibles entre sí — datos que,
+                  en la práctica, nadie podía consultar.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c2.did">
+                  Diseñé un pipeline ETL en Python que consolidó cerca de
+                  7.000 registros históricos de tres fuentes distintas en
+                  una base de datos relacional: detección y normalización
+                  de tipos, unificación de categorías, validación de
+                  integridad referencial y reporte de las filas que no
+                  pasaban las reglas, en lugar de descartarlas en silencio.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Python</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">SQL</li>
+                    <li class="badge">MySQL</li>
+                    <li class="badge" data-i18n="stack.relationalModel">Modelado relacional</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.result">Resultado</dt>
+                <dd data-i18n="cases.c2.result">
+                  La información histórica quedó consultable y utilizable
+                  para reportes y análisis — la base sobre la que después
+                  se planteó el sistema de pronóstico.
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c3.title">Tableros de gestión en Power BI</h3>
+                <p class="case-study__role" data-i18n="cases.c3.role">Desarrollador BI · Levantamiento, modelado y construcción</p>
+              </div>
+              <span class="case-study__when" data-i18n="cases.c3.when">2024 – 2025</span>
+            </div>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c3.problem">
+                  Los informes semestrales de la Unidad se armaban cruzando
+                  hojas de cálculo a mano: tomaba días y las cifras eran
+                  difíciles de reconstruir.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c3.did">
+                  Levanté los indicadores con cuatro dependencias de la
+                  Facultad y construí cinco tableros — gestión de aulas,
+                  prácticas y pasantías, solicitudes web y operación
+                  interna. Además dicté seis sesiones de capacitación en
+                  Python, SQL y Google Apps Script a veinte personas de
+                  otras áreas, para reducir su dependencia del equipo de
+                  desarrollo en consultas rutinarias.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Power BI</li>
+                    <li class="badge">Power Query</li>
+                    <li class="badge">SQL</li>
+                    <li class="badge" data-i18n="stack.advancedExcel">Excel avanzado</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.result">Resultado</dt>
+                <dd data-i18n="cases.c3.result">
+                  Los tableros pasaron a alimentar el informe de gestión de
+                  la Unidad, con cifras trazables hasta su fuente.
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c4.title">Predictor de estrategia de pit stop — Fórmula 1</h3>
+                <p class="case-study__role">
+                  <span data-i18n="cases.c4.role">Código abierto</span> ·
+                  <a href="https://github.com/Davidrg02/f1-pitstop-predictor" target="_blank" rel="noopener noreferrer">github.com/Davidrg02/f1-pitstop-predictor</a>
+                </p>
+              </div>
+              <span class="case-study__when" data-i18n="cases.c4.when">Personal · En curso</span>
+            </div>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c4.problem">
+                  Entrar a boxes cuesta unos veinte segundos fijos. La
+                  decisión de cuándo hacerlo se toma bajo incertidumbre
+                  sobre el rendimiento que le queda al neumático. ¿Se puede
+                  anticipar esa decisión desde el estado de la carrera?
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c4.did">
+                  Pipeline ETL sobre la API pública de Fórmula 1 (FastF1) y
+                  un clasificador binario que predice si un piloto entrará
+                  a boxes en las próximas tres vueltas, a partir de
+                  degradación de neumáticos, ritmo y estado de carrera.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Python</li>
+                    <li class="badge">FastF1</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">Scikit-learn</li>
+                    <li class="badge">XGBoost</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.status">Estado</dt>
+                <dd data-i18n="cases.c4.status">
+                  En desarrollo: falta cerrar el pipeline de features,
+                  entrenar con validación temporal y reportar contra
+                  baselines.
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skills.tag">Habilidades</span>
+          <h2 class="section-title" data-i18n="skills.title">Con lo que trabajo</h2>
+          <p class="section-desc" data-i18n="skills.desc">
+            Tecnologías y herramientas que uso con más frecuencia.
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title" data-i18n="skills.data">Datos y análisis</h3>
+            <ul class="skills__list">
+              <li class="badge">Python</li>
+              <li class="badge">Pandas</li>
+              <li class="badge">NumPy</li>
+              <li class="badge">Scikit-learn</li>
+              <li class="badge">XGBoost</li>
+              <li class="badge">Matplotlib</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title" data-i18n="skills.db">SQL y bases de datos</h3>
+            <ul class="skills__list">
+              <li class="badge">SQL</li>
+              <li class="badge">MySQL</li>
+              <li class="badge">SQLite</li>
+              <li class="badge" data-i18n="stack.relationalModel">Modelado relacional</li>
+              <li class="badge">SQLAlchemy</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title" data-i18n="skills.bi">BI y reportería</h3>
+            <ul class="skills__list">
+              <li class="badge">Power BI</li>
+              <li class="badge">Power Query</li>
+              <li class="badge">Streamlit</li>
+              <li class="badge" data-i18n="stack.advancedExcel">Excel avanzado</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Backend</h3>
+            <ul class="skills__list">
+              <li class="badge">Django</li>
+              <li class="badge">Django REST</li>
+              <li class="badge">FastAPI</li>
+              <li class="badge">APIs REST</li>
+              <li class="badge">pytest</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Frontend</h3>
+            <ul class="skills__list">
+              <li class="badge">React.js</li>
+              <li class="badge">JavaScript</li>
+              <li class="badge">React Router</li>
+              <li class="badge">Material UI</li>
+              <li class="badge">Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title" data-i18n="skills.infra">Infraestructura</h3>
+            <ul class="skills__list">
+              <li class="badge">Linux (Red Hat)</li>
+              <li class="badge">Docker</li>
+              <li class="badge">Apache</li>
+              <li class="badge">Git</li>
+              <li class="badge">Scrum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact.tag">Contacto</span>
+          <h2 class="section-title" data-i18n="contact.title">Busco mi primer rol de tiempo completo en datos o desarrollo.</h2>
+          <p class="section-desc" data-i18n="contact.desc">
+            Si tienes una vacante donde alguien deba escribir el SQL,
+            construir el pipeline y explicar el resultado a quien toma la
+            decisión, hablemos.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <form class="contact__form" action="mailto:davidstevenrg2003@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.formName">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" data-i18n-placeholder="contact.placeholderName" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.formEmail">Correo</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" data-i18n-placeholder="contact.placeholderEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.formMessage">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." data-i18n-placeholder="contact.placeholderMessage" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar mensaje</button>
+          </form>
+
+          <div class="contact__info">
+            <a class="contact__card" href="mailto:davidstevenrg2003@gmail.com">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div>
+                <p class="contact__label">Email</p>
+                <p class="contact__value">davidstevenrg2003@gmail.com</p>
+              </div>
+            </a>
+
+            <a class="contact__card" href="https://github.com/Davidrg02" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              </span>
+              <div>
+                <p class="contact__label">GitHub</p>
+                <p class="contact__value">github.com/Davidrg02</p>
+              </div>
+            </a>
+
+            <a class="contact__card" href="https://www.linkedin.com/in/david-rodriguez-data/" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <div>
+                <p class="contact__label">LinkedIn</p>
+                <p class="contact__value">linkedin.com/in/david-rodriguez-data</p>
+              </div>
+            </a>
+
+            <a class="contact__card" href="CV_David_Rodriguez.pdf" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </span>
+              <div>
+                <p class="contact__label">CV</p>
+                <p class="contact__value" data-i18n="contact.cvValue">Descargar PDF</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> David Steven Rodríguez Guzmán. <span data-i18n="footer.tagline">Hecho a mano, sin frameworks.</span></p>
+      <a href="#main-content" class="footer__top"><span data-i18n="footer.top">Volver arriba</span> ↑</a>
+    </div>
+  </footer>
 
   <script src="js/translations.js"></script>
   <script src="js/i18n.js"></script>

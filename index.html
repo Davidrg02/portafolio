@@ -22,7 +22,33 @@
 <body>
   <a href="#main-content" class="skip-link">Saltar al contenido</a>
 
-  <header id="header"></header>
+  <header id="header" class="header">
+    <div class="container header__inner">
+      <a href="#main-content" class="logo">David<span class="logo-dot">.</span></a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">Sobre mí</a></li>
+          <li><a href="#projects" class="nav__link">Proyectos</a></li>
+          <li><a href="#skills" class="nav__link">Habilidades</a></li>
+          <li><a href="#contact" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
   <main id="main-content"></main>
 

@@ -311,7 +311,7 @@ body {
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 26px;
 }
 
 .nav__link {
@@ -814,6 +814,113 @@ body {
   .timeline__item {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+}
+
+/* ==========================================================================
+   Education
+   ========================================================================== */
+.edu-card {
+  padding: 36px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.edu-card__badge {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 26px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.edu-card__crest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.edu-card__crest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edu-card__org {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.edu-card__loc {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
+.edu-item {
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+
+.edu-card__list .edu-item:first-child {
+  border-top: none;
+  padding-top: 4px;
+}
+
+.edu-item__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.edu-item__head h3 {
+  font-size: 1.05rem;
+}
+
+.edu-item__when {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.edu-item__meta {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.edu-item__cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  transition: color 0.2s var(--ease);
+}
+
+.edu-item__cert svg {
+  width: 15px;
+  height: 15px;
+}
+
+.edu-item__cert:hover {
+  color: var(--text);
+}
+
+@media (max-width: 560px) {
+  .edu-card {
+    padding: 24px;
   }
 }
 

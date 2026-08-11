@@ -7,6 +7,7 @@ window.translations = {
     "nav.toggleLabel": "Menú",
     "nav.about": "Sobre mí",
     "nav.experience": "Trayectoria",
+    "nav.education": "Educación",
     "nav.cases": "Casos",
     "nav.skills": "Habilidades",
     "nav.contact": "Contacto",
@@ -58,11 +59,23 @@ window.translations = {
     "experience.r3.role": "Desarrollador Junior",
     "experience.r3.b1":
       "Frontend con React.js en equipo Scrum, integración de APIs REST.",
-    "experience.r4.when": "2020 – 2026",
-    "experience.r4.role": "Ingeniería de Sistemas y Computación",
-    "experience.r4.b1": "Egresado; acta de grado en trámite.",
-    "experience.r4.b2":
-      "Diplomado en Machine Learning y Data Science (192 horas), 2025.",
+
+    "education.tag": "Educación",
+    "education.title": "Formación académica",
+    "education.desc":
+      "Título y cursos, todos en la Universidad Nacional de Colombia.",
+    "education.e1.title": "Ingeniería de Sistemas y Computación",
+    "education.e1.when": "2020 – 2026",
+    "education.e1.meta": "Egresado; acta de grado en trámite.",
+    "education.e2.title": "Diplomado en Machine Learning and Data Science",
+    "education.e2.when": "Mar – Jul 2025",
+    "education.e2.meta":
+      "192 horas · Facultad de Ingeniería · Modalidad virtual",
+    "education.e3.title": "Elementos de Machine Learning",
+    "education.e3.when": "Nov – Dic 2025",
+    "education.e3.meta":
+      "30 horas · Instituto de Extensión e Investigación · Modalidad virtual",
+    "education.viewCert": "Ver certificado",
 
     "cases.tag": "Casos de estudio",
     "cases.title": "Casos a fondo",
@@ -167,6 +180,7 @@ window.translations = {
     "nav.toggleLabel": "Menu",
     "nav.about": "About",
     "nav.experience": "Experience",
+    "nav.education": "Education",
     "nav.cases": "Case studies",
     "nav.skills": "Skills",
     "nav.contact": "Contact",
@@ -218,11 +232,22 @@ window.translations = {
     "experience.r3.role": "Junior Developer",
     "experience.r3.b1":
       "React.js frontend on a Scrum team, REST API integration.",
-    "experience.r4.when": "2020 – 2026",
-    "experience.r4.role": "Systems and Computer Engineering",
-    "experience.r4.b1": "Graduated coursework; degree certificate in process.",
-    "experience.r4.b2":
-      "Diploma in Machine Learning and Data Science (192 hours), 2025.",
+
+    "education.tag": "Education",
+    "education.title": "Academic background",
+    "education.desc":
+      "Degree and courses, all at Universidad Nacional de Colombia.",
+    "education.e1.title": "Systems and Computer Engineering",
+    "education.e1.when": "2020 – 2026",
+    "education.e1.meta": "Graduated coursework; degree certificate in process.",
+    "education.e2.title": "Machine Learning and Data Science Diploma",
+    "education.e2.when": "Mar – Jul 2025",
+    "education.e2.meta": "192 hours · Faculty of Engineering · Virtual",
+    "education.e3.title": "Elements of Machine Learning",
+    "education.e3.when": "Nov – Dec 2025",
+    "education.e3.meta":
+      "30 hours · Institute of Extension and Research · Virtual",
+    "education.viewCert": "View certificate",
 
     "cases.tag": "Case studies",
     "cases.title": "Deep-dive case studies",

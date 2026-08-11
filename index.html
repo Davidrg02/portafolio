@@ -32,6 +32,7 @@
         <ul class="nav__list">
           <li><a href="#about" class="nav__link" data-i18n="nav.about">Sobre mí</a></li>
           <li><a href="#experience" class="nav__link" data-i18n="nav.experience">Trayectoria</a></li>
+          <li><a href="#education" class="nav__link" data-i18n="nav.education">Educación</a></li>
           <li><a href="#cases" class="nav__link" data-i18n="nav.cases">Casos</a></li>
           <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Habilidades</a></li>
           <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contacto</a></li>
@@ -192,19 +193,64 @@
             </div>
           </div>
 
-          <div class="timeline__item reveal">
-            <div class="timeline__meta">
-              <span class="timeline__when" data-i18n="experience.r4.when">2020 – 2026</span>
-              <span class="timeline__org">Universidad Nacional de Colombia</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="education.tag">Educación</span>
+          <h2 class="section-title" data-i18n="education.title">Formación académica</h2>
+          <p class="section-desc" data-i18n="education.desc">
+            Título y cursos, todos en la Universidad Nacional de Colombia.
+          </p>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__badge">
+            <div class="edu-card__crest">
+              <img src="assets/images/unal-crest.png" alt="Universidad Nacional de Colombia" width="256" height="328" loading="lazy" />
             </div>
-            <div class="timeline__body">
-              <h3 class="timeline__role" data-i18n="experience.r4.role">Ingeniería de Sistemas y Computación</h3>
-              <ul class="timeline__list">
-                <li data-i18n="experience.r4.b1">Egresado; acta de grado en trámite.</li>
-                <li data-i18n="experience.r4.b2">Diplomado en Machine Learning y Data Science (192 horas), 2025.</li>
-              </ul>
+            <div>
+              <p class="edu-card__org">Universidad Nacional de Colombia</p>
+              <p class="edu-card__loc">Bogotá, Colombia</p>
             </div>
           </div>
+
+          <ul class="edu-card__list">
+            <li class="edu-item">
+              <div class="edu-item__head">
+                <h3 data-i18n="education.e1.title">Ingeniería de Sistemas y Computación</h3>
+                <span class="edu-item__when" data-i18n="education.e1.when">2020 – 2026</span>
+              </div>
+              <p class="edu-item__meta" data-i18n="education.e1.meta">Egresado; acta de grado en trámite.</p>
+            </li>
+
+            <li class="edu-item">
+              <div class="edu-item__head">
+                <h3 data-i18n="education.e2.title">Diplomado en Machine Learning and Data Science</h3>
+                <span class="edu-item__when" data-i18n="education.e2.when">Mar – Jul 2025</span>
+              </div>
+              <p class="edu-item__meta" data-i18n="education.e2.meta">192 horas · Facultad de Ingeniería · Modalidad virtual</p>
+              <a class="edu-item__cert" href="assets/certificados/diplomado-machine-learning-data-science.pdf" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span data-i18n="education.viewCert">Ver certificado</span>
+              </a>
+            </li>
+
+            <li class="edu-item">
+              <div class="edu-item__head">
+                <h3 data-i18n="education.e3.title">Elementos de Machine Learning</h3>
+                <span class="edu-item__when" data-i18n="education.e3.when">Nov – Dic 2025</span>
+              </div>
+              <p class="edu-item__meta" data-i18n="education.e3.meta">30 horas · Instituto de Extensión e Investigación · Modalidad virtual</p>
+              <a class="edu-item__cert" href="assets/certificados/elementos-de-machine-learning.pdf" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span data-i18n="education.viewCert">Ver certificado</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

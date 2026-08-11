@@ -144,9 +144,9 @@ window.translations = {
     "skills.infra": "Infraestructura",
 
     "contact.tag": "Contacto",
-    "contact.title": "¿Hablamos?",
+    "contact.title": "Busco mi primer rol de tiempo completo en datos o desarrollo.",
     "contact.desc":
-      "¿Tienes un proyecto en mente o una oportunidad? Escríbeme, con gusto te respondo.",
+      "Si tienes una vacante donde alguien deba escribir el SQL, construir el pipeline y explicar el resultado a quien toma la decisión, hablemos.",
     "contact.formName": "Nombre",
     "contact.formEmail": "Correo",
     "contact.formMessage": "Mensaje",
@@ -154,7 +154,7 @@ window.translations = {
     "contact.placeholderEmail": "tu@email.com",
     "contact.placeholderMessage": "Cuéntame sobre tu proyecto...",
     "contact.submit": "Enviar mensaje",
-    "contact.linkedinValue": "Actualiza tu enlace",
+    "contact.cvValue": "Descargar PDF",
 
     "footer.tagline": "Hecho con HTML, CSS y JavaScript.",
     "footer.top": "Volver arriba",
@@ -303,9 +303,9 @@ window.translations = {
     "skills.infra": "Infrastructure",
 
     "contact.tag": "Contact",
-    "contact.title": "Let's talk",
+    "contact.title": "I'm looking for my first full-time role in data or development.",
     "contact.desc":
-      "Have a project in mind or an opportunity? Reach out, I'd love to hear from you.",
+      "If you have an opening where someone needs to write the SQL, build the pipeline, and explain the result to the decision-maker, let's talk.",
     "contact.formName": "Name",
     "contact.formEmail": "Email",
     "contact.formMessage": "Message",
@@ -313,7 +313,7 @@ window.translations = {
     "contact.placeholderEmail": "you@email.com",
     "contact.placeholderMessage": "Tell me about your project...",
     "contact.submit": "Send message",
-    "contact.linkedinValue": "Update your link",
+    "contact.cvValue": "Download PDF",
 
     "footer.tagline": "Made with HTML, CSS and JavaScript.",
     "footer.top": "Back to top",

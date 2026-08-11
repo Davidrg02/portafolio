@@ -212,91 +212,280 @@
     <section id="cases" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="projects.tag">Proyectos</span>
-          <h2 class="section-title" data-i18n="projects.title">Trabajo reciente</h2>
-          <p class="section-desc" data-i18n="projects.desc">
-            Una selección de proyectos en los que he trabajado. Reemplaza
-            estos ejemplos con tus propios proyectos.
+          <span class="section-tag" data-i18n="cases.tag">Casos de estudio</span>
+          <h2 class="section-title" data-i18n="cases.title">Casos a fondo</h2>
+          <p class="section-desc" data-i18n="cases.desc">
+            Cuatro proyectos: el problema, las restricciones y lo que
+            realmente hice — no solo el resultado.
           </p>
         </div>
 
-        <div class="projects__grid">
-          <article class="project-card">
-            <div class="project-card__top">
-              <span class="project-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
-              <div class="project-card__links">
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub" data-i18n-aria-label="projects.codeLabel">
-                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo en vivo" data-i18n-aria-label="projects.demoLabel">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
+        <div class="cases__list">
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c1.title">Sistema de pronóstico de demanda académica</h3>
+                <p class="case-study__role" data-i18n="cases.c1.role">Iniciativa propia · Diseño y desarrollo completo</p>
               </div>
+              <span class="case-study__when" data-i18n="cases.c1.when">Feb – Jul 2026</span>
             </div>
-            <h3 class="project-card__title" data-i18n="projects.p1.title">Tienda en línea</h3>
-            <p class="project-card__desc" data-i18n="projects.p1.desc">
-              Plataforma de e-commerce con carrito de compras, pasarela de
-              pago y panel de administración.
-            </p>
-            <ul class="project-card__tags">
-              <li class="badge">React</li>
-              <li class="badge">Node.js</li>
-              <li class="badge">MongoDB</li>
-            </ul>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c1.problem">
+                  La apertura de cupos de asignaturas y de cursos de
+                  educación continua se planeaba por criterio manual, sin
+                  estimación de demanda: la Facultad abría grupos que
+                  quedaban vacíos y dejaba corta la oferta de los que se
+                  llenaban.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c1.did">
+                  Propuse, diseñé y desarrollé el proyecto completo en seis
+                  meses. Construí un panel longitudinal de 154 asignaturas
+                  por semestre (2024-1 a 2026-1) con 13 variables derivadas
+                  — rezagos de inscripción, ocupación, repitencia,
+                  cancelación y atributos del plan de estudios — y entrené
+                  tres modelos de regresión con XGBoost, validados con
+                  partición temporal: los semestres más recientes quedan
+                  fuera del entrenamiento, porque con variables rezagadas
+                  una partición aleatoria dejaría ver el futuro al modelo.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Python</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">Scikit-learn</li>
+                    <li class="badge">XGBoost</li>
+                    <li class="badge">SQL</li>
+                    <li class="badge">MySQL</li>
+                    <li class="badge">SQLAlchemy</li>
+                    <li class="badge">FastAPI</li>
+                    <li class="badge">Streamlit</li>
+                    <li class="badge">pytest</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.result">Resultado</dt>
+                <dd data-i18n="cases.c1.result">
+                  Documentado y transferido al área para su despliegue. El
+                  entregable más valioso no fue el modelo: fue el
+                  diagnóstico de por qué el problema, tal como está
+                  planteado, no se puede resolver con los datos que existen
+                  hoy.
+                </dd>
+              </div>
+            </dl>
+
+            <div class="finding">
+              <p class="finding__eyebrow" data-i18n="finding.eyebrow">El hallazgo</p>
+              <h4 class="finding__headline" data-i18n="finding.headline">El modelo no le ganó a repetir el semestre anterior.</h4>
+
+              <div class="finding__bars">
+                <div class="finding__bar-row">
+                  <span class="finding__bar-label" data-i18n="finding.bar1">Persistencia (rezago 1)</span>
+                  <div class="finding__bar-track"><div class="finding__bar-fill" data-width="90"></div></div>
+                  <span class="finding__bar-value" data-i18n="finding.val1">15,77</span>
+                </div>
+                <div class="finding__bar-row">
+                  <span class="finding__bar-label" data-i18n="finding.bar2">Asumir grupo lleno</span>
+                  <div class="finding__bar-track"><div class="finding__bar-fill" data-width="97"></div></div>
+                  <span class="finding__bar-value" data-i18n="finding.val2">16,99</span>
+                </div>
+                <div class="finding__bar-row">
+                  <span class="finding__bar-label" data-i18n="finding.bar3">XGBoost entrenado</span>
+                  <div class="finding__bar-track"><div class="finding__bar-fill finding__bar-fill--model" data-width="100"></div></div>
+                  <span class="finding__bar-value" data-i18n="finding.val3">17,47</span>
+                </div>
+              </div>
+              <p class="finding__caption" data-i18n="finding.caption">Error absoluto medio sobre el conjunto de prueba — menor es mejor · resultados reales del proyecto</p>
+
+              <p data-i18n="finding.p1">
+                El modelo alcanzó un R² de 0,845, que en un reporte apurado
+                se lee como éxito. Comparado contra dos reglas triviales sin
+                aprendizaje, quedó por debajo de ambas: un R² alto con
+                error peor que la persistencia significa que el modelo
+                aprendió el nivel típico de cada asignatura, no el cambio
+                de un semestre a otro.
+              </p>
+              <p data-i18n="finding.p2">
+                La causa es de medición, no de ajuste: el objetivo está
+                estructuralmente censurado. Lo que registra el sistema no
+                es demanda, es demanda truncada por el cupo — ninguna
+                cantidad de historia adicional arregla eso.
+              </p>
+              <p data-i18n="finding.p3">
+                Reporté el resultado tal cual y documenté qué se necesita
+                para resolverlo: registrar sistemáticamente el sobrecupo y
+                la demanda expresada, las únicas señales no censuradas
+                disponibles.
+              </p>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-card__top">
-              <span class="project-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
-              <div class="project-card__links">
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub" data-i18n-aria-label="projects.codeLabel">
-                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo en vivo" data-i18n-aria-label="projects.demoLabel">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c2.title">Consolidación de datos históricos dispersos</h3>
+                <p class="case-study__role" data-i18n="cases.c2.role">Líder de Desarrollo · Diseño e implementación</p>
               </div>
+              <span class="case-study__when" data-i18n="cases.c2.when">2025 – 2026</span>
             </div>
-            <h3 class="project-card__title" data-i18n="projects.p2.title">Gestor de tareas</h3>
-            <p class="project-card__desc" data-i18n="projects.p2.desc">
-              Aplicación para organizar tareas por proyecto con tableros
-              arrastrables y recordatorios.
-            </p>
-            <ul class="project-card__tags">
-              <li class="badge">Vue</li>
-              <li class="badge">Firebase</li>
-              <li class="badge">CSS Grid</li>
-            </ul>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c2.problem">
+                  Años de información operativa vivían en archivos de Excel
+                  mantenidos por distintas personas, con nombres, formatos
+                  de fecha y categorías incompatibles entre sí — datos que,
+                  en la práctica, nadie podía consultar.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c2.did">
+                  Diseñé un pipeline ETL en Python que consolidó cerca de
+                  7.000 registros históricos de tres fuentes distintas en
+                  una base de datos relacional: detección y normalización
+                  de tipos, unificación de categorías, validación de
+                  integridad referencial y reporte de las filas que no
+                  pasaban las reglas, en lugar de descartarlas en silencio.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Python</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">SQL</li>
+                    <li class="badge">MySQL</li>
+                    <li class="badge" data-i18n="stack.relationalModel">Modelado relacional</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.result">Resultado</dt>
+                <dd data-i18n="cases.c2.result">
+                  La información histórica quedó consultable y utilizable
+                  para reportes y análisis — la base sobre la que después
+                  se planteó el sistema de pronóstico.
+                </dd>
+              </div>
+            </dl>
           </article>
 
-          <article class="project-card">
-            <div class="project-card__top">
-              <span class="project-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
-              <div class="project-card__links">
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub" data-i18n-aria-label="projects.codeLabel">
-                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo en vivo" data-i18n-aria-label="projects.demoLabel">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c3.title">Tableros de gestión en Power BI</h3>
+                <p class="case-study__role" data-i18n="cases.c3.role">Desarrollador BI · Levantamiento, modelado y construcción</p>
               </div>
+              <span class="case-study__when" data-i18n="cases.c3.when">2024 – 2025</span>
             </div>
-            <h3 class="project-card__title" data-i18n="projects.p3.title">Panel del clima</h3>
-            <p class="project-card__desc" data-i18n="projects.p3.desc">
-              Dashboard que consume una API pública para mostrar el clima
-              actual y el pronóstico de varias ciudades.
-            </p>
-            <ul class="project-card__tags">
-              <li class="badge">JavaScript</li>
-              <li class="badge">API REST</li>
-              <li class="badge">Chart.js</li>
-            </ul>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c3.problem">
+                  Los informes semestrales de la Unidad se armaban cruzando
+                  hojas de cálculo a mano: tomaba días y las cifras eran
+                  difíciles de reconstruir.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c3.did">
+                  Levanté los indicadores con cuatro dependencias de la
+                  Facultad y construí cinco tableros — gestión de aulas,
+                  prácticas y pasantías, solicitudes web y operación
+                  interna. Además dicté seis sesiones de capacitación en
+                  Python, SQL y Google Apps Script a veinte personas de
+                  otras áreas, para reducir su dependencia del equipo de
+                  desarrollo en consultas rutinarias.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Power BI</li>
+                    <li class="badge">Power Query</li>
+                    <li class="badge">SQL</li>
+                    <li class="badge" data-i18n="stack.advancedExcel">Excel avanzado</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.result">Resultado</dt>
+                <dd data-i18n="cases.c3.result">
+                  Los tableros pasaron a alimentar el informe de gestión de
+                  la Unidad, con cifras trazables hasta su fuente.
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__head">
+              <div>
+                <h3 class="case-study__title" data-i18n="cases.c4.title">Predictor de estrategia de pit stop — Fórmula 1</h3>
+                <p class="case-study__role">
+                  <span data-i18n="cases.c4.role">Código abierto</span> ·
+                  <a href="https://github.com/Davidrg02/f1-pitstop-predictor" target="_blank" rel="noopener noreferrer">github.com/Davidrg02/f1-pitstop-predictor</a>
+                </p>
+              </div>
+              <span class="case-study__when" data-i18n="cases.c4.when">Personal · En curso</span>
+            </div>
+
+            <dl class="case-study__body">
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.problem">Problema</dt>
+                <dd data-i18n="cases.c4.problem">
+                  Entrar a boxes cuesta unos veinte segundos fijos. La
+                  decisión de cuándo hacerlo se toma bajo incertidumbre
+                  sobre el rendimiento que le queda al neumático. ¿Se puede
+                  anticipar esa decisión desde el estado de la carrera?
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.did">Qué hice</dt>
+                <dd data-i18n="cases.c4.did">
+                  Pipeline ETL sobre la API pública de Fórmula 1 (FastF1) y
+                  un clasificador binario que predice si un piloto entrará
+                  a boxes en las próximas tres vueltas, a partir de
+                  degradación de neumáticos, ritmo y estado de carrera.
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.stack">Stack</dt>
+                <dd>
+                  <ul class="case-study__tags">
+                    <li class="badge">Python</li>
+                    <li class="badge">FastF1</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">Scikit-learn</li>
+                    <li class="badge">XGBoost</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="case-study__row">
+                <dt data-i18n="cases.label.status">Estado</dt>
+                <dd data-i18n="cases.c4.status">
+                  En desarrollo: falta cerrar el pipeline de features,
+                  entrenar con validación temporal y reportar contra
+                  baselines.
+                </dd>
+              </div>
+            </dl>
           </article>
         </div>
       </div>

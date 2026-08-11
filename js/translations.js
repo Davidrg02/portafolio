@@ -64,21 +64,76 @@ window.translations = {
     "experience.r4.b2":
       "Diplomado en Machine Learning y Data Science (192 horas), 2025.",
 
-    "projects.tag": "Proyectos",
-    "projects.title": "Trabajo reciente",
-    "projects.desc":
-      "Una selección de proyectos en los que he trabajado. Reemplaza estos ejemplos con tus propios proyectos.",
-    "projects.codeLabel": "Ver código en GitHub",
-    "projects.demoLabel": "Ver demo en vivo",
-    "projects.p1.title": "Tienda en línea",
-    "projects.p1.desc":
-      "Plataforma de e-commerce con carrito de compras, pasarela de pago y panel de administración.",
-    "projects.p2.title": "Gestor de tareas",
-    "projects.p2.desc":
-      "Aplicación para organizar tareas por proyecto con tableros arrastrables y recordatorios.",
-    "projects.p3.title": "Panel del clima",
-    "projects.p3.desc":
-      "Dashboard que consume una API pública para mostrar el clima actual y el pronóstico de varias ciudades.",
+    "cases.tag": "Casos de estudio",
+    "cases.title": "Casos a fondo",
+    "cases.desc":
+      "Cuatro proyectos: el problema, las restricciones y lo que realmente hice — no solo el resultado.",
+    "cases.label.problem": "Problema",
+    "cases.label.did": "Qué hice",
+    "cases.label.stack": "Stack",
+    "cases.label.result": "Resultado",
+    "cases.label.status": "Estado",
+
+    "cases.c1.title": "Sistema de pronóstico de demanda académica",
+    "cases.c1.role": "Iniciativa propia · Diseño y desarrollo completo",
+    "cases.c1.when": "Feb – Jul 2026",
+    "cases.c1.problem":
+      "La apertura de cupos de asignaturas y de cursos de educación continua se planeaba por criterio manual, sin estimación de demanda: la Facultad abría grupos que quedaban vacíos y dejaba corta la oferta de los que se llenaban.",
+    "cases.c1.did":
+      "Propuse, diseñé y desarrollé el proyecto completo en seis meses. Construí un panel longitudinal de 154 asignaturas por semestre (2024-1 a 2026-1) con 13 variables derivadas — rezagos de inscripción, ocupación, repitencia, cancelación y atributos del plan de estudios — y entrené tres modelos de regresión con XGBoost, validados con partición temporal: los semestres más recientes quedan fuera del entrenamiento, porque con variables rezagadas una partición aleatoria dejaría ver el futuro al modelo.",
+    "cases.c1.result":
+      "Documentado y transferido al área para su despliegue. El entregable más valioso no fue el modelo: fue el diagnóstico de por qué el problema, tal como está planteado, no se puede resolver con los datos que existen hoy.",
+
+    "cases.c2.title": "Consolidación de datos históricos dispersos",
+    "cases.c2.role": "Líder de Desarrollo · Diseño e implementación",
+    "cases.c2.when": "2025 – 2026",
+    "cases.c2.problem":
+      "Años de información operativa vivían en archivos de Excel mantenidos por distintas personas, con nombres, formatos de fecha y categorías incompatibles entre sí — datos que, en la práctica, nadie podía consultar.",
+    "cases.c2.did":
+      "Diseñé un pipeline ETL en Python que consolidó cerca de 7.000 registros históricos de tres fuentes distintas en una base de datos relacional: detección y normalización de tipos, unificación de categorías, validación de integridad referencial y reporte de las filas que no pasaban las reglas, en lugar de descartarlas en silencio.",
+    "cases.c2.result":
+      "La información histórica quedó consultable y utilizable para reportes y análisis — la base sobre la que después se planteó el sistema de pronóstico.",
+
+    "cases.c3.title": "Tableros de gestión en Power BI",
+    "cases.c3.role":
+      "Desarrollador BI · Levantamiento, modelado y construcción",
+    "cases.c3.when": "2024 – 2025",
+    "cases.c3.problem":
+      "Los informes semestrales de la Unidad se armaban cruzando hojas de cálculo a mano: tomaba días y las cifras eran difíciles de reconstruir.",
+    "cases.c3.did":
+      "Levanté los indicadores con cuatro dependencias de la Facultad y construí cinco tableros — gestión de aulas, prácticas y pasantías, solicitudes web y operación interna. Además dicté seis sesiones de capacitación en Python, SQL y Google Apps Script a veinte personas de otras áreas, para reducir su dependencia del equipo de desarrollo en consultas rutinarias.",
+    "cases.c3.result":
+      "Los tableros pasaron a alimentar el informe de gestión de la Unidad, con cifras trazables hasta su fuente.",
+
+    "cases.c4.title": "Predictor de estrategia de pit stop — Fórmula 1",
+    "cases.c4.role": "Código abierto",
+    "cases.c4.when": "Personal · En curso",
+    "cases.c4.problem":
+      "Entrar a boxes cuesta unos veinte segundos fijos. La decisión de cuándo hacerlo se toma bajo incertidumbre sobre el rendimiento que le queda al neumático. ¿Se puede anticipar esa decisión desde el estado de la carrera?",
+    "cases.c4.did":
+      "Pipeline ETL sobre la API pública de Fórmula 1 (FastF1) y un clasificador binario que predice si un piloto entrará a boxes en las próximas tres vueltas, a partir de degradación de neumáticos, ritmo y estado de carrera.",
+    "cases.c4.status":
+      "En desarrollo: falta cerrar el pipeline de features, entrenar con validación temporal y reportar contra baselines.",
+
+    "stack.relationalModel": "Modelado relacional",
+    "stack.advancedExcel": "Excel avanzado",
+
+    "finding.eyebrow": "El hallazgo",
+    "finding.headline": "El modelo no le ganó a repetir el semestre anterior.",
+    "finding.bar1": "Persistencia (rezago 1)",
+    "finding.bar2": "Asumir grupo lleno",
+    "finding.bar3": "XGBoost entrenado",
+    "finding.val1": "15,77",
+    "finding.val2": "16,99",
+    "finding.val3": "17,47",
+    "finding.caption":
+      "Error absoluto medio sobre el conjunto de prueba — menor es mejor · resultados reales del proyecto",
+    "finding.p1":
+      "El modelo alcanzó un R² de 0,845, que en un reporte apurado se lee como éxito. Comparado contra dos reglas triviales sin aprendizaje, quedó por debajo de ambas: un R² alto con error peor que la persistencia significa que el modelo aprendió el nivel típico de cada asignatura, no el cambio de un semestre a otro.",
+    "finding.p2":
+      "La causa es de medición, no de ajuste: el objetivo está estructuralmente censurado. Lo que registra el sistema no es demanda, es demanda truncada por el cupo — ninguna cantidad de historia adicional arregla eso.",
+    "finding.p3":
+      "Reporté el resultado tal cual y documenté qué se necesita para resolverlo: registrar sistemáticamente el sobrecupo y la demanda expresada, las únicas señales no censuradas disponibles.",
 
     "skills.tag": "Habilidades",
     "skills.title": "Con lo que trabajo",
@@ -166,21 +221,75 @@ window.translations = {
     "experience.r4.b2":
       "Diploma in Machine Learning and Data Science (192 hours), 2025.",
 
-    "projects.tag": "Projects",
-    "projects.title": "Recent work",
-    "projects.desc":
-      "A selection of projects I've worked on. Replace these examples with your own projects.",
-    "projects.codeLabel": "View code on GitHub",
-    "projects.demoLabel": "View live demo",
-    "projects.p1.title": "Online store",
-    "projects.p1.desc":
-      "E-commerce platform with shopping cart, payment gateway and admin dashboard.",
-    "projects.p2.title": "Task manager",
-    "projects.p2.desc":
-      "App to organize tasks by project with drag-and-drop boards and reminders.",
-    "projects.p3.title": "Weather dashboard",
-    "projects.p3.desc":
-      "Dashboard that consumes a public API to show current weather and the forecast for several cities.",
+    "cases.tag": "Case studies",
+    "cases.title": "Deep-dive case studies",
+    "cases.desc":
+      "Four projects: the problem, the constraints, and what I actually did — not just the outcome.",
+    "cases.label.problem": "Problem",
+    "cases.label.did": "What I did",
+    "cases.label.stack": "Stack",
+    "cases.label.result": "Result",
+    "cases.label.status": "Status",
+
+    "cases.c1.title": "Academic demand-forecasting system",
+    "cases.c1.role": "Self-initiated · Full design & development",
+    "cases.c1.when": "Feb – Jul 2026",
+    "cases.c1.problem":
+      "Slot planning for courses and continuing-education programs relied on manual judgment, with no demand estimate: the Faculty opened groups that stayed empty and under-provisioned the ones that filled up.",
+    "cases.c1.did":
+      "I proposed, designed and built the full project over six months. I built a longitudinal panel of 154 subjects per semester (2024-1 to 2026-1) with 13 derived variables — enrollment lags, occupancy, repetition, cancellation and curriculum attributes — and trained three XGBoost regression models, validated with a temporal split: the most recent semesters are held out from training, because with lagged variables a random split would let the model see the future.",
+    "cases.c1.result":
+      "Documented and handed off to the team for deployment. The most valuable deliverable wasn't the model — it was the diagnosis of why the problem, as currently framed, can't be solved with the data that exists today.",
+
+    "cases.c2.title": "Consolidating scattered historical data",
+    "cases.c2.role": "Development Lead · Design & implementation",
+    "cases.c2.when": "2025 – 2026",
+    "cases.c2.problem":
+      "Years of operational data lived in Excel files maintained by different people, with incompatible naming, date formats and categories — data that, in practice, nobody could query.",
+    "cases.c2.did":
+      "I designed a Python ETL pipeline that consolidated close to 7,000 historical records from three different sources into a relational database: type detection and normalization, category unification, referential-integrity validation, and reporting rows that failed the rules instead of silently dropping them.",
+    "cases.c2.result":
+      "The historical data became queryable and usable for reporting and analysis — the foundation the forecasting system was later built on.",
+
+    "cases.c3.title": "Power BI management dashboards",
+    "cases.c3.role": "BI Developer · Requirements, modeling & build",
+    "cases.c3.when": "2024 – 2025",
+    "cases.c3.problem":
+      "The Unit's semiannual reports were assembled by manually cross-referencing spreadsheets: it took days and the figures were hard to trace back.",
+    "cases.c3.did":
+      "I gathered requirements with four departments across the Faculty and built five dashboards — classroom management, internships, web requests and internal operations. I also ran six training sessions on Python, SQL and Google Apps Script for twenty people from other areas, to reduce their dependency on the dev team for routine queries.",
+    "cases.c3.result":
+      "The dashboards now feed the Unit's management report, with figures traceable back to their source.",
+
+    "cases.c4.title": "F1 pit-stop strategy predictor",
+    "cases.c4.role": "Open source",
+    "cases.c4.when": "Personal · In progress",
+    "cases.c4.problem":
+      "A pit stop costs a fixed ~20 seconds. The decision of when to make one is made under uncertainty about how much tire performance is left. Can that decision be anticipated from race state?",
+    "cases.c4.did":
+      "An ETL pipeline over the public Formula 1 API (FastF1) and a binary classifier that predicts whether a driver will pit within the next three laps, based on tire degradation, pace and race state.",
+    "cases.c4.status":
+      "In progress: closing the feature pipeline, training with temporal validation, and reporting against baselines are still pending.",
+
+    "stack.relationalModel": "Relational modeling",
+    "stack.advancedExcel": "Advanced Excel",
+
+    "finding.eyebrow": "The finding",
+    "finding.headline": "The model didn't beat repeating last semester's number.",
+    "finding.bar1": "Persistence (lag 1)",
+    "finding.bar2": "Assume full group",
+    "finding.bar3": "Trained XGBoost",
+    "finding.val1": "15.77",
+    "finding.val2": "16.99",
+    "finding.val3": "17.47",
+    "finding.caption":
+      "Mean absolute error on the test set — lower is better · real project results",
+    "finding.p1":
+      "The model reached an R² of 0.845, which in a rushed report reads as success. Measured against two trivial, learning-free rules, it landed behind both: a high R² with worse error than persistence means the model learned each subject's typical level, not the change from one semester to the next.",
+    "finding.p2":
+      "The cause is measurement, not fit: the target is structurally censored. What the system records isn't demand, it's demand truncated by capacity — no amount of extra history fixes that.",
+    "finding.p3":
+      "I reported the result as-is and documented what it would take to fix: systematically logging over-capacity requests and expressed demand — the only uncensored signals available.",
 
     "skills.tag": "Skills",
     "skills.title": "What I work with",

@@ -1,7 +1,7 @@
 // ES/EN dictionary consumed by js/i18n.js via data-i18n(-*) attributes.
 window.translations = {
   es: {
-    "meta.title": "David · Desarrollador Full Stack",
+    "meta.title": "David Rodríguez · Datos, BI y desarrollo",
     "skip.content": "Saltar al contenido",
     "lang.switchLabel": "Selector de idioma",
     "nav.toggleLabel": "Menú",
@@ -156,12 +156,12 @@ window.translations = {
     "contact.submit": "Enviar mensaje",
     "contact.cvValue": "Descargar PDF",
 
-    "footer.tagline": "Hecho con HTML, CSS y JavaScript.",
+    "footer.tagline": "Hecho a mano, sin frameworks.",
     "footer.top": "Volver arriba",
   },
 
   en: {
-    "meta.title": "David · Full Stack Developer",
+    "meta.title": "David Rodríguez · Data, BI & Development",
     "skip.content": "Skip to content",
     "lang.switchLabel": "Language selector",
     "nav.toggleLabel": "Menu",
@@ -315,7 +315,7 @@ window.translations = {
     "contact.submit": "Send message",
     "contact.cvValue": "Download PDF",
 
-    "footer.tagline": "Made with HTML, CSS and JavaScript.",
+    "footer.tagline": "Handmade, no frameworks.",
     "footer.top": "Back to top",
   },
 };

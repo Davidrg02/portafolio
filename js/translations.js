@@ -8,6 +8,7 @@ window.translations = {
     "nav.toggleLabel": "Menú",
     "nav.about": "Sobre mí",
     "nav.experience": "Trayectoria",
+    "nav.apps": "Aplicativos",
     "nav.education": "Educación",
     "nav.cases": "Casos",
     "nav.skills": "Habilidades",
@@ -60,6 +61,31 @@ window.translations = {
     "experience.r3.role": "Desarrollador Junior",
     "experience.r3.b1":
       "Frontend con React.js en equipo Scrum, integración de APIs REST.",
+
+    "apps.tag": "Desarrollo",
+    "apps.title": "Cinco aplicativos, de junior a líder",
+    "apps.desc":
+      "Software institucional real, en producción, para la Unidad de Informática de la Facultad de Ciencias Económicas (UNAL).",
+    "apps.a1.title": "Aplicativo interno UIFCE",
+    "apps.a1.role": "Full-stack",
+    "apps.a1.desc":
+      "Préstamos de equipos, inventario y tablero de tareas para monitores. Lo recibí incompleto, lo terminé de punta a punta, lo validé funcionalmente y lo desplegué.",
+    "apps.a2.title": "Cursos libres",
+    "apps.a2.role": "Full-stack",
+    "apps.a2.desc":
+      "Inscripción, verificación de postulantes y generación de certificados. Planeación, módulos, corrección de errores y despliegue. De aquí salió la migración de ~7.000 registros históricos desde 3 fuentes distintas.",
+    "apps.a3.title": "Insignias académicas",
+    "apps.a3.role": "Full-stack",
+    "apps.a3.desc":
+      "Convalidación de tres cursos de 20 horas como asignatura optativa. Planeación, correcciones y despliegue.",
+    "apps.a4.title": "Programación de salones",
+    "apps.a4.role": "Full-stack",
+    "apps.a4.desc":
+      "Corregí una carga masiva que aceptaba archivos de Excel con errores sin notificarlos, y agregué un segundo método de autenticación. Planeación, correcciones, validación funcional y despliegue.",
+    "apps.a5.title": "Cartas de prácticas y pasantías",
+    "apps.a5.role": "Frontend",
+    "apps.a5.desc":
+      "Generación de cartas para estudiantes y gestión administrativa del proceso. Mi primer proyecto en la Unidad — solo frontend, en React.js.",
 
     "education.tag": "Educación",
     "education.title": "Formación académica",
@@ -182,6 +208,7 @@ window.translations = {
     "nav.toggleLabel": "Menu",
     "nav.about": "About",
     "nav.experience": "Experience",
+    "nav.apps": "Applications",
     "nav.education": "Education",
     "nav.cases": "Case studies",
     "nav.skills": "Skills",
@@ -234,6 +261,31 @@ window.translations = {
     "experience.r3.role": "Junior Developer",
     "experience.r3.b1":
       "React.js frontend on a Scrum team, REST API integration.",
+
+    "apps.tag": "Development",
+    "apps.title": "Five applications, junior to lead",
+    "apps.desc":
+      "Real institutional software, in production, for the Economics Faculty's IT Unit (UNAL).",
+    "apps.a1.title": "UIFCE internal app",
+    "apps.a1.role": "Full-stack",
+    "apps.a1.desc":
+      "Equipment loans, inventory, and a task board for student monitors. I received it unfinished, took it end to end, validated it functionally, and shipped it.",
+    "apps.a2.title": "Open courses",
+    "apps.a2.role": "Full-stack",
+    "apps.a2.desc":
+      "Enrollment, applicant verification, and certificate generation. Planning, modules, bug fixes, and deployment. This is where the ~7,000-record historical migration from 3 different sources came from.",
+    "apps.a3.title": "Academic badges",
+    "apps.a3.role": "Full-stack",
+    "apps.a3.desc":
+      "Validation of three 20-hour courses as an elective credit. Planning, fixes, and deployment.",
+    "apps.a4.title": "Classroom scheduling",
+    "apps.a4.role": "Full-stack",
+    "apps.a4.desc":
+      "Fixed a bulk upload that accepted Excel files with errors without reporting them, and added a second authentication method. Planning, fixes, functional validation, and deployment.",
+    "apps.a5.title": "Internship letters",
+    "apps.a5.role": "Frontend",
+    "apps.a5.desc":
+      "Letter generation for students and administrative management of the process. My first project at the Unit — frontend only, in React.js.",
 
     "education.tag": "Education",
     "education.title": "Academic background",

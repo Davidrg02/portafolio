@@ -186,6 +186,14 @@ del CV. **No relajarlas por hacer que algo suene mejor.**
 **Sí se puede afirmar:** todo lo listado en la sección de experiencia arriba,
 con esas cifras exactas.
 
+**Mantenimiento — CV descargable:** `portafolio/CV_David_Rodriguez.pdf` es una
+copia estática de `../CV_David_Datos_ES_Diseno.pdf` (raíz del proyecto, fuera de
+este repo). **No se actualiza sola.** Cada vez que se corrija el `.tex` fuente y
+se recompile el PDF, hay que volver a copiarlo aquí y commitear — si no, el botón
+"Descargar CV" del sitio sirve una versión vieja aunque el resto del sitio esté al
+día. Ya pasó una vez (2026-08-12): el PDF quedó desactualizado por 3 commits
+seguidos de correcciones al `.tex` antes de que alguien lo notara.
+
 **Criterio general:** si una afirmación no sobrevive cinco minutos de preguntas en
 una entrevista técnica, no va. El costo de que descubran una exageración es mucho
 mayor que el beneficio de incluirla.

@@ -72,16 +72,17 @@ ETL, Docker, Linux, despliegue y levantamiento de requerimientos con usuarios.
   estudiantes y público externo.
 - Insignias académicas: convalidación de 3 cursos de 20 h como asignatura optativa.
   Planeación, **correcciones puntuales sobre distintos módulos** (código limitado, no
-  full-stack) y despliegue. Stack no verificado — preguntar antes de publicarlo en algún
-  lado. Lo usan estudiantes de la Facultad y administración académica.
+  full-stack) y despliegue. Stack: Django + Angular. Lo usan estudiantes de la Facultad y
+  administración académica.
 - Programación de salones: planeación y validación funcional, y despliegue. **No escribió
   código en este aplicativo** — corrección anterior (que él mismo arregló el bug de la
   carga masiva de Excel y agregó un segundo método de autenticación) era incorrecta y ya
   se retiró de CVs y portafolio. Lo usan profesores y coordinadores académicos.
 - Cartas de prácticas y pasantías: generación de cartas por estudiantes y gestión
-  administrativa. Su primer proyecto; solo frontend en React.js, equipo Scrum. No
-  confirmado si él hizo el despliegue de este. Lo usan estudiantes en prácticas/pasantías
-  y el área administrativa.
+  administrativa. Su primer proyecto; frontend en React.js, equipo Scrum. Más adelante, ya
+  como Máster de Desarrollo (no como responsabilidad formal, algo que alcanzó a hacer),
+  también hizo el despliegue. Lo usan estudiantes en prácticas/pasantías y el área
+  administrativa.
 
 **Formación**
 - Diplomado en Machine Learning and Data Science, UNAL, 18 mar – 26 jul 2025 — 192 horas

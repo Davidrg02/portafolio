@@ -90,7 +90,7 @@ window.translations = {
     "apps.a5.title": "Cartas de prácticas y pasantías",
     "apps.a5.role": "Frontend",
     "apps.a5.desc":
-      "Generación de cartas para estudiantes y gestión administrativa del proceso. Mi primer proyecto en la Unidad — solo frontend, en React.js, en equipo Scrum.",
+      "Generación de cartas para estudiantes y gestión administrativa del proceso. Mi primer proyecto en la Unidad — frontend en React.js, en equipo Scrum. Más adelante, ya como Máster de Desarrollo, también hice el despliegue.",
     "apps.a5.users": "estudiantes en prácticas o pasantías y el área administrativa",
 
     "education.tag": "Educación",
@@ -296,7 +296,7 @@ window.translations = {
     "apps.a5.title": "Internship letters",
     "apps.a5.role": "Frontend",
     "apps.a5.desc":
-      "Letter generation for students and administrative management of the process. My first project at the Unit — frontend only, in React.js, on a Scrum team.",
+      "Letter generation for students and administrative management of the process. My first project at the Unit — frontend in React.js, on a Scrum team. Later, as Development Master, I also handled the deployment.",
     "apps.a5.users": "students on internships or practicums and the administrative area",
 
     "education.tag": "Education",

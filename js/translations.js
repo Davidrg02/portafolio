@@ -168,7 +168,7 @@ window.translations = {
       "En desarrollo: falta cerrar el pipeline de features, entrenar con validación temporal y reportar contra baselines.",
 
     "stack.relationalModel": "Modelado relacional",
-    "stack.advancedExcel": "Excel avanzado",
+    "stack.advancedExcel": "Excel (fuente de datos)",
 
     "finding.eyebrow": "El hallazgo",
     "finding.headline": "El modelo no le ganó a repetir el semestre anterior.",
@@ -378,7 +378,7 @@ window.translations = {
       "In progress: closing the feature pipeline, training with temporal validation, and reporting against baselines are still pending.",
 
     "stack.relationalModel": "Relational modeling",
-    "stack.advancedExcel": "Advanced Excel",
+    "stack.advancedExcel": "Excel (data source)",
 
     "finding.eyebrow": "The finding",
     "finding.headline": "The model didn't beat repeating last semester's number.",

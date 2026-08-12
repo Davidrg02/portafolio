@@ -63,9 +63,9 @@ window.translations = {
       "Frontend con React.js en equipo Scrum, integración de APIs REST.",
 
     "apps.tag": "Desarrollo",
-    "apps.title": "Cinco aplicativos, de junior a líder",
+    "apps.title": "De junior a líder, aplicativo a aplicativo",
     "apps.desc":
-      "Software institucional real, en producción, para la Unidad de Informática de la Facultad de Ciencias Económicas (UNAL).",
+      "5 de los 6 aplicativos institucionales que lideré, en producción para la Unidad de Informática de la Facultad de Ciencias Económicas (UNAL). El sexto no tiene una historia propia que contar aparte de las demás.",
     "apps.usersLabel": "Lo usa:",
     "apps.a1.title": "Aplicativo interno UIFCE",
     "apps.a1.role": "Full-stack",
@@ -149,7 +149,7 @@ window.translations = {
     "cases.c3.problem":
       "Los informes semestrales de la Unidad se armaban cruzando hojas de cálculo a mano: tomaba días y las cifras eran difíciles de reconstruir.",
     "cases.c3.did":
-      "Levanté los indicadores con cuatro dependencias de la Facultad y construí cinco tableros — gestión de aulas, prácticas y pasantías, solicitudes web y operación interna. Además dicté seis sesiones de capacitación en Python, SQL y Google Apps Script a veinte personas de otras áreas, para reducir su dependencia del equipo de desarrollo en consultas rutinarias.",
+      "Levanté los indicadores con cuatro dependencias de la Facultad y construí cinco tableros — gestión de aulas, prácticas y pasantías, solicitudes web y operación interna.",
     "cases.c3.result":
       "Los tableros pasaron a alimentar el informe de gestión de la Unidad, con cifras trazables hasta su fuente.",
 
@@ -271,9 +271,9 @@ window.translations = {
       "React.js frontend on a Scrum team, REST API integration.",
 
     "apps.tag": "Development",
-    "apps.title": "Five applications, junior to lead",
+    "apps.title": "From junior to lead, one app at a time",
     "apps.desc":
-      "Real institutional software, in production, for the Economics Faculty's IT Unit (UNAL).",
+      "5 of the 6 institutional applications I led, in production for the Economics Faculty's IT Unit (UNAL). The sixth doesn't have a story of its own beyond the rest.",
     "apps.usersLabel": "Used by:",
     "apps.a1.title": "UIFCE internal app",
     "apps.a1.role": "Full-stack",
@@ -355,7 +355,7 @@ window.translations = {
     "cases.c3.problem":
       "The Unit's semiannual reports were assembled by manually cross-referencing spreadsheets: it took days and the figures were hard to trace back.",
     "cases.c3.did":
-      "I gathered requirements with four departments across the Faculty and built five dashboards — classroom management, internships, web requests and internal operations. I also ran six training sessions on Python, SQL and Google Apps Script for twenty people from other areas, to reduce their dependency on the dev team for routine queries.",
+      "I gathered requirements with four departments across the Faculty and built five dashboards — classroom management, internships, web requests and internal operations.",
     "cases.c3.result":
       "The dashboards now feed the Unit's management report, with figures traceable back to their source.",
 

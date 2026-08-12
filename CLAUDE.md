@@ -14,6 +14,9 @@ Bogotá, Colombia.
 - GitHub: `Davidrg02`
 - LinkedIn: `linkedin.com/in/david-rodriguez-data`
 - Correo: `davidstevenrg2003@gmail.com`
+- Portafolio: `davidrg02.github.io/portafolio` — **no** `david-rodriguez.onrender.com`
+  (URL vieja de Render, abandonada por el riesgo de arranque en frío; si aparece en
+  algún CV o documento es un residuo que hay que corregir).
 
 **Situación actual:** búsqueda activa de empleo. Su vinculación como estudiante auxiliar
 en la Unidad de Informática de la Facultad de Ciencias Económicas (UIFCE) de la UNAL
@@ -147,6 +150,15 @@ Datos de la API FastF1. **En desarrollo, con fecha límite de dos semanas.**
 Pendientes: cerrar el pipeline de features, entrenar con validación temporal,
 reportar contra baselines, limpiar el README (tenía un `EOF` suelto y describía
 una carpeta `api/` inexistente), hacer commits incrementales.
+
+**Estado en los CVs (2026-08-11):** se retiró de los 4 CVs (`.tex` y PDF) porque
+tenía un marcador `\ph{métrica}` sin resolver — visible en rojo en las versiones
+de Diseño — mientras el proyecto sigue sin terminar. El portafolio sí lo mantiene
+como caso de estudio, pero etiquetado explícitamente "En desarrollo" y sin
+reclamar ninguna métrica, que es honesto. Cuando el proyecto (que se trabaja en su
+propia sesión, en `../f1-pitstop-predictor/`) tenga métrica real y esté
+desplegado, volver a agregarlo a los 4 CVs con el resultado real, no un
+placeholder.
 
 ---
 

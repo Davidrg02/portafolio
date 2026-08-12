@@ -66,26 +66,32 @@ window.translations = {
     "apps.title": "Cinco aplicativos, de junior a líder",
     "apps.desc":
       "Software institucional real, en producción, para la Unidad de Informática de la Facultad de Ciencias Económicas (UNAL).",
+    "apps.usersLabel": "Lo usa:",
     "apps.a1.title": "Aplicativo interno UIFCE",
     "apps.a1.role": "Full-stack",
     "apps.a1.desc":
       "Préstamos de equipos, inventario y tablero de tareas para monitores. Lo recibí incompleto, lo terminé de punta a punta, lo validé funcionalmente y lo desplegué.",
+    "apps.a1.users": "monitores y personal de la UIFCE",
     "apps.a2.title": "Cursos libres",
     "apps.a2.role": "Full-stack",
     "apps.a2.desc":
-      "Inscripción, verificación de postulantes y generación de certificados. Planeación, módulos, corrección de errores y despliegue. De aquí salió la migración de ~7.000 registros históricos desde 3 fuentes distintas.",
+      "Inscripción, verificación de postulantes y generación de certificados para cursos cortos abiertos. Planeación, módulos, corrección de errores y despliegue. De aquí salió la migración de ~7.000 registros históricos desde 3 fuentes distintas.",
+    "apps.a2.users": "estudiantes y público externo interesado en cursos cortos",
     "apps.a3.title": "Insignias académicas",
-    "apps.a3.role": "Full-stack",
+    "apps.a3.role": "Planeación · Correcciones",
     "apps.a3.desc":
-      "Convalidación de tres cursos de 20 horas como asignatura optativa. Planeación, correcciones y despliegue.",
+      "Convalidación de tres cursos de 20 horas como asignatura optativa. Estuve en la planeación, hice correcciones puntuales sobre distintos módulos y lo desplegué.",
+    "apps.a3.users": "estudiantes de la Facultad y administración académica",
     "apps.a4.title": "Programación de salones",
-    "apps.a4.role": "Full-stack",
+    "apps.a4.role": "Planeación · Despliegue",
     "apps.a4.desc":
-      "Corregí una carga masiva que aceptaba archivos de Excel con errores sin notificarlos, y agregué un segundo método de autenticación. Planeación, correcciones, validación funcional y despliegue.",
+      "Calendario de disponibilidad de auditorios, salones, salas y equipos para toda la Facultad. Estuve en la planeación y la validación funcional, y lo desplegué; no intervine en el código.",
+    "apps.a4.users": "profesores y coordinadores académicos",
     "apps.a5.title": "Cartas de prácticas y pasantías",
     "apps.a5.role": "Frontend",
     "apps.a5.desc":
-      "Generación de cartas para estudiantes y gestión administrativa del proceso. Mi primer proyecto en la Unidad — solo frontend, en React.js.",
+      "Generación de cartas para estudiantes y gestión administrativa del proceso. Mi primer proyecto en la Unidad — solo frontend, en React.js, en equipo Scrum.",
+    "apps.a5.users": "estudiantes en prácticas o pasantías y el área administrativa",
 
     "education.tag": "Educación",
     "education.title": "Formación académica",
@@ -266,26 +272,32 @@ window.translations = {
     "apps.title": "Five applications, junior to lead",
     "apps.desc":
       "Real institutional software, in production, for the Economics Faculty's IT Unit (UNAL).",
+    "apps.usersLabel": "Used by:",
     "apps.a1.title": "UIFCE internal app",
     "apps.a1.role": "Full-stack",
     "apps.a1.desc":
       "Equipment loans, inventory, and a task board for student monitors. I received it unfinished, took it end to end, validated it functionally, and shipped it.",
+    "apps.a1.users": "student monitors and UIFCE staff",
     "apps.a2.title": "Open courses",
     "apps.a2.role": "Full-stack",
     "apps.a2.desc":
-      "Enrollment, applicant verification, and certificate generation. Planning, modules, bug fixes, and deployment. This is where the ~7,000-record historical migration from 3 different sources came from.",
+      "Enrollment, applicant verification, and certificate generation for short open courses. Planning, modules, bug fixes, and deployment. This is where the ~7,000-record historical migration from 3 different sources came from.",
+    "apps.a2.users": "students and outside applicants interested in short courses",
     "apps.a3.title": "Academic badges",
-    "apps.a3.role": "Full-stack",
+    "apps.a3.role": "Planning · Fixes",
     "apps.a3.desc":
-      "Validation of three 20-hour courses as an elective credit. Planning, fixes, and deployment.",
+      "Validation of three 20-hour courses as an elective credit. I handled planning, made targeted fixes across a few modules, and deployed it.",
+    "apps.a3.users": "Faculty students and academic administration",
     "apps.a4.title": "Classroom scheduling",
-    "apps.a4.role": "Full-stack",
+    "apps.a4.role": "Planning · Deployment",
     "apps.a4.desc":
-      "Fixed a bulk upload that accepted Excel files with errors without reporting them, and added a second authentication method. Planning, fixes, functional validation, and deployment.",
+      "Availability calendar for auditoriums, classrooms, rooms and equipment across the Faculty. I handled planning and functional validation and deployed it; I didn't touch the code.",
+    "apps.a4.users": "professors and academic coordinators",
     "apps.a5.title": "Internship letters",
     "apps.a5.role": "Frontend",
     "apps.a5.desc":
-      "Letter generation for students and administrative management of the process. My first project at the Unit — frontend only, in React.js.",
+      "Letter generation for students and administrative management of the process. My first project at the Unit — frontend only, in React.js, on a Scrum team.",
+    "apps.a5.users": "students on internships or practicums and the administrative area",
 
     "education.tag": "Education",
     "education.title": "Academic background",

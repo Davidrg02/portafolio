@@ -62,18 +62,26 @@ ETL, Docker, Linux, despliegue y levantamiento de requerimientos con usuarios.
 **Desarrollador Junior — UIFCE · Ago – Dic 2023**
 - Frontend con React.js en equipo Scrum, integración de APIs REST
 
-**Aplicativos institucionales (5 de 6 documentados)**
+**Aplicativos institucionales (5 de 6 documentados) — roles verificados (2026-08-11)**
 - Aplicativo interno UIFCE: préstamos, inventario de equipos, tablero de tareas para
-  monitores. Lo recibió incompleto, lo terminó full-stack, lo validó funcionalmente y desplegó.
+  monitores. Lo recibió incompleto, lo terminó full-stack (Django + React.js), lo validó
+  funcionalmente y desplegó. Lo usan monitores y personal de la UIFCE.
 - Cursos libres: inscripción, verificación de postulantes y generación de certificados.
-  Planeación, módulos, corrección de errores, despliegue. Origen de la migración de ~7.000
-  registros desde 3 fuentes.
+  Planeación, desarrollo de módulos, corrección de errores, despliegue. Full-stack
+  (Next.js + .NET). Origen de la migración de ~7.000 registros desde 3 fuentes. Lo usan
+  estudiantes y público externo.
 - Insignias académicas: convalidación de 3 cursos de 20 h como asignatura optativa.
-  Planeación, correcciones, despliegue.
-- Programación de salones: corrigió la carga masiva que no reportaba errores del Excel;
-  segundo método de autenticación. Planeación, correcciones, validación funcional, despliegue.
+  Planeación, **correcciones puntuales sobre distintos módulos** (código limitado, no
+  full-stack) y despliegue. Stack no verificado — preguntar antes de publicarlo en algún
+  lado. Lo usan estudiantes de la Facultad y administración académica.
+- Programación de salones: planeación y validación funcional, y despliegue. **No escribió
+  código en este aplicativo** — corrección anterior (que él mismo arregló el bug de la
+  carga masiva de Excel y agregó un segundo método de autenticación) era incorrecta y ya
+  se retiró de CVs y portafolio. Lo usan profesores y coordinadores académicos.
 - Cartas de prácticas y pasantías: generación de cartas por estudiantes y gestión
-  administrativa. Su primer proyecto; solo frontend en React.js.
+  administrativa. Su primer proyecto; solo frontend en React.js, equipo Scrum. No
+  confirmado si él hizo el despliegue de este. Lo usan estudiantes en prácticas/pasantías
+  y el área administrativa.
 
 **Formación**
 - Diplomado en Machine Learning and Data Science, UNAL, 18 mar – 26 jul 2025 — 192 horas
@@ -156,6 +164,11 @@ del CV. **No relajarlas por hacer que algo suene mejor.**
   automatizadas" fuera de ese proyecto; usar "validación funcional".
 - CI/CD o GitHub Actions. Todos los despliegues fueron manuales.
 - Inglés conversacional.
+- Que David escribió/corrigió código en el aplicativo de Programación de salones. No lo
+  hizo — solo planeación, validación funcional y despliegue (corregido 2026-08-11, ver
+  sección de aplicativos).
+- Que su rol en Insignias académicas fue "full-stack". Fue planeación + correcciones
+  puntuales sobre módulos existentes, no desarrollo full-stack (corregido 2026-08-11).
 
 **Sí se puede afirmar:** todo lo listado en la sección de experiencia arriba,
 con esas cifras exactas.

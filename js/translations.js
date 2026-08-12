@@ -41,6 +41,10 @@ window.translations = {
       "Pipeline ETL en Python: ~7.000 registros históricos consolidados desde 3 fuentes.",
     "experience.r1.b4":
       "Levantamiento de requerimientos con 4 dependencias de la Facultad.",
+    "experience.r1.b5":
+      "Terminé el aplicativo interno UIFCE con cerca de 60 endpoints REST, combinando el ORM de Django y SQL directo, y lo puse en producción.",
+    "experience.r1.b6":
+      "Aplicativo de insignias académicas: correcciones puntuales sobre distintos módulos y despliegue.",
     "experience.apps.label": "Aplicativos que lideré:",
     "experience.app1": "Aplicativo interno",
     "experience.app2": "Cursos libres",
@@ -50,9 +54,9 @@ window.translations = {
     "experience.r2.when": "Feb 2024 – Mar 2025",
     "experience.r2.role": "Desarrollador — BI, ETL y Full-Stack",
     "experience.r2.b1":
-      "2 aplicativos nuevos de punta a punta con Django y React.js.",
+      "Aplicativo de programación de aulas y salones: planeación, validación funcional y despliegue.",
     "experience.r2.b2":
-      "~60 endpoints REST, combinando el ORM de Django y SQL directo.",
+      "Inicié el desarrollo del aplicativo de cursos libres (Next.js, .NET): planeación y primeros módulos.",
     "experience.r2.b3":
       "5 tableros de gestión en Power BI para el informe de la Unidad.",
     "experience.r2.b4":
@@ -70,7 +74,7 @@ window.translations = {
     "apps.a1.title": "Aplicativo interno UIFCE",
     "apps.a1.role": "Full-stack",
     "apps.a1.desc":
-      "Préstamos de equipos, inventario y tablero de tareas para monitores. Lo recibí incompleto, lo terminé de punta a punta, lo validé funcionalmente y lo desplegué.",
+      "Préstamos de equipos, inventario y tablero de tareas para monitores. Lo recibí incompleto, lo terminé de punta a punta con cerca de 60 endpoints REST, lo validé funcionalmente y lo desplegué.",
     "apps.a1.users": "monitores y personal de la UIFCE",
     "apps.a2.title": "Cursos libres",
     "apps.a2.role": "Full-stack",
@@ -249,6 +253,10 @@ window.translations = {
       "Python ETL pipeline: ~7,000 historical records consolidated from 3 sources.",
     "experience.r1.b4":
       "Requirements gathering with 4 departments across the Faculty.",
+    "experience.r1.b5":
+      "Finished the UIFCE internal app, with about 60 REST endpoints combining the Django ORM with direct SQL, and shipped it to production.",
+    "experience.r1.b6":
+      "Academic badges application: targeted fixes across several modules and deployment.",
     "experience.apps.label": "Applications I led:",
     "experience.app1": "Internal app",
     "experience.app2": "Open courses",
@@ -258,9 +266,9 @@ window.translations = {
     "experience.r2.when": "Feb 2024 – Mar 2025",
     "experience.r2.role": "Developer — BI, ETL & Full-Stack",
     "experience.r2.b1":
-      "2 new end-to-end applications with Django and React.js.",
+      "Classroom and room scheduling application: planning, functional validation and deployment.",
     "experience.r2.b2":
-      "~60 REST endpoints, combining the Django ORM with direct SQL.",
+      "Kicked off development of the open-courses application (Next.js, .NET): planning and first modules.",
     "experience.r2.b3":
       "5 Power BI management dashboards for the Unit's reporting.",
     "experience.r2.b4":
@@ -278,7 +286,7 @@ window.translations = {
     "apps.a1.title": "UIFCE internal app",
     "apps.a1.role": "Full-stack",
     "apps.a1.desc":
-      "Equipment loans, inventory, and a task board for student monitors. I received it unfinished, took it end to end, validated it functionally, and shipped it.",
+      "Equipment loans, inventory, and a task board for student monitors. I received it unfinished, took it end to end with about 60 REST endpoints, validated it functionally, and shipped it.",
     "apps.a1.users": "student monitors and UIFCE staff",
     "apps.a2.title": "Open courses",
     "apps.a2.role": "Full-stack",

@@ -243,3 +243,30 @@ anonimizadas, como último recurso.
 - Responder en español.
 - Respuestas directas, sin relleno ni preámbulos.
 - Es aceptable —y preferible— señalar problemas en su enfoque en lugar de validarlo.
+
+---
+
+## Voz por canal — no clonar el mismo párrafo (regla añadida 2026-08-12)
+
+Los hechos deben ser idénticos en CV / portafolio / LinkedIn (eso es innegociable,
+ver honestidad arriba). **La redacción no.** Se detectó que el Perfil del CV, el
+hero bio del portafolio y el "Acerca de" de LinkedIn convergían en el mismo
+esqueleto de frase ("entré junior, salí liderando", "por iniciativa propia",
+"analizo los datos y construyo los sistemas que los producen") — un reclutador que
+revisa más de una fuente lee el mismo párrafo reformulado tres veces, y eso lee
+como plantilla, no como criterio.
+
+Cada canal tiene un trabajo distinto:
+- **CV — Perfil:** capacidad y prueba, comprimido, sin arco narrativo. Se lee en
+  8 segundos. Sin personalidad — no hace falta ahí.
+- **Portafolio — hero bio:** es el dueño legítimo del arco "junior → líder" (coincide
+  con el título de la sección Trayectoria). No repetir ese arco en el CV ni en
+  LinkedIn.
+- **LinkedIn — Acerca de:** el único lugar donde cabe una línea de voz/criterio en
+  primera persona — pero anclada en un hecho real y verificable (ej. la historia
+  de la censura del predictor de demanda), nunca una afirmación genérica de
+  entusiasmo ("me apasiona", "me encanta aprender"). Sigue empezando con
+  SQL/Python/datos en la primera frase por SEO de LinkedIn.
+
+Antes de escribir o reescribir cualquiera de los tres, revisar los otros dos para
+no clonar la misma frase de apertura o cierre.

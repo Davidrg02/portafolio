@@ -182,6 +182,9 @@ del CV. **No relajarlas por hacer que algo suene mejor.**
   sección de aplicativos).
 - Que su rol en Insignias académicas fue "full-stack". Fue planeación + correcciones
   puntuales sobre módulos existentes, no desarrollo full-stack (corregido 2026-08-11).
+- "Excel avanzado". Confirmado por David: nunca usó tablas dinámicas ni fórmulas
+  complejas; su uso real fue como fuente de datos (lectura programática con pandas)
+  y Power Query. Decir solo "Excel" o "Excel (fuente de datos)" (corregido 2026-08-12).
 
 **Sí se puede afirmar:** todo lo listado en la sección de experiencia arriba,
 con esas cifras exactas.

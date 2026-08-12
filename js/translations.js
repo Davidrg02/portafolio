@@ -129,6 +129,8 @@ window.translations = {
       "Propuse, diseñé y desarrollé el proyecto completo en seis meses. Construí un panel longitudinal de 154 asignaturas por semestre (2024-1 a 2026-1) con 13 variables derivadas — rezagos de inscripción, ocupación, repitencia, cancelación y atributos del plan de estudios — y entrené tres modelos de regresión con XGBoost, validados con partición temporal: los semestres más recientes quedan fuera del entrenamiento, porque con variables rezagadas una partición aleatoria dejaría ver el futuro al modelo.",
     "cases.c1.result":
       "Documentado y transferido al área para su despliegue. El entregable más valioso no fue el modelo: fue el diagnóstico de por qué el problema, tal como está planteado, no se puede resolver con los datos que existen hoy.",
+    "cases.c1.shotCaption":
+      "Dashboard real del proyecto (Streamlit), con datos sintéticos — no institucionales. Las cifras que se ven en pantalla son de este dataset de demostración, no las métricas reales del proyecto (esas están abajo).",
 
     "cases.c2.title": "Consolidación de datos históricos dispersos",
     "cases.c2.role": "Líder de Desarrollo · Diseño e implementación",
@@ -334,6 +336,8 @@ window.translations = {
       "I proposed, designed and built the full project over six months. I built a longitudinal panel of 154 subjects per semester (2024-1 to 2026-1) with 13 derived variables — enrollment lags, occupancy, repetition, cancellation and curriculum attributes — and trained three XGBoost regression models, validated with a temporal split: the most recent semesters are held out from training, because with lagged variables a random split would let the model see the future.",
     "cases.c1.result":
       "Documented and handed off to the team for deployment. The most valuable deliverable wasn't the model — it was the diagnosis of why the problem, as currently framed, can't be solved with the data that exists today.",
+    "cases.c1.shotCaption":
+      "Real project dashboard (Streamlit), with synthetic data — not institutional. The numbers on screen belong to this demo dataset, not the project's real metrics (those are below).",
 
     "cases.c2.title": "Consolidating scattered historical data",
     "cases.c2.role": "Development Lead · Design & implementation",

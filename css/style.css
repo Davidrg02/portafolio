@@ -1187,6 +1187,29 @@ body {
 }
 
 /* ==========================================================================
+   Case study screenshot (demand-forecasting dashboard)
+   ========================================================================== */
+.case-study__shot {
+  margin: 24px 0 0;
+}
+
+.case-study__shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+
+.case-study__shot figcaption {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+
+/* ==========================================================================
    Finding callout (demand-forecasting case study)
    ========================================================================== */
 .finding {

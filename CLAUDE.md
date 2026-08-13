@@ -270,3 +270,15 @@ Cada canal tiene un trabajo distinto:
 
 Antes de escribir o reescribir cualquiera de los tres, revisar los otros dos para
 no clonar la misma frase de apertura o cierre.
+
+**Dentro del mismo CV, el Perfil tampoco debe duplicar Experiencia** (regla
+añadida 2026-08-12, investigada — ver fuentes en `contexto_chat_claude.md`
+2026-08-12). Un resumen profesional bien hecho trae **un** logro cuantificado,
+no dos, y ese logro va redactado distinto a como aparece después en detalle —
+no la misma frase copiada. El Perfil original tenía "Lideré/Dirigí un equipo de
+4 desarrolladores sobre 6 aplicativos institucionales (500–1.000 usuarios)"
+palabra por palabra igual al primer bullet de Experiencia, más un segundo logro
+completo (el proyecto de pronóstico) — demasiado para un resumen. Corregido en
+los 4 CVs: las cifras de liderazgo quedan solo en Experiencia; el Perfil se
+queda con capacidad + dominio + un gancho distinto (la historia del baseline en
+Datos, los ~60 endpoints del aplicativo interno en Desarrollo).
